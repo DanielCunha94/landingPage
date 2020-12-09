@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar">
+        <div class="brand-title"><img src="logo.png" alt="" /></div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#top">top</a></li>
+            <li><a href="#middle">middle</a></li>
+            <li><a href="#bottom">bottom</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="flex-container" id="top">
+        <div class="flex-text">
+          <h1>An Imagimary <span style="color: #31c6e8">Company.</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu
+            neque non risus pulvinar viverra.
+          </p>
+
+          <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <label for="email" style="display: block"> More Information</label>
+            <input
+              class="flex-form"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email"
+              required
+            />
+            <input class="flex-cta" type="submit" id="submit" value="Submit" />
+          </form>
+        </div>
+        <div class="flex-img">
+          <img
+            id="img-office"
+            src="undraw_mobile_inbox_3h46.svg"
+            alt="imaginary campany office"
+          />
+        </div>
+      </section>
+
+      <section class="flex-container" id="middle">
+        <div class="flex-img">
+          <img
+            id="img-office"
+            src="undraw_online_messaging_9ro6.svg"
+            alt="imaginary campany office"
+          />
+        </div>
+        <div class="flex-text">
+          <h1>An Imaginary <span style="color: #31e89f">Product.</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu
+            neque non risus pulvinar viverra.
+          </p>
+          <div class="swiper">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    class="swiper-img"
+                    src="icon-access-anywhere.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-img" src="icon-any-file.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-img" src="icon-collaboration.svg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-img" src="icon-security.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <section class="flex-container" id="bottom">
+        <div class="flex-text">
+          <h1>An Imaginary <span style="color: #31e8e8">team.</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu
+            neque non risus pulvinar viverra.
+          </p>
+
+          <button type="button" class="collapsible">We do this</button>
+          <div class="content">
+            <p>Lorem ipsum...</p>
+          </div>
+          <button type="button" class="collapsible">And this</button>
+          <div class="content">
+            <p>Lorem ipsum...</p>
+          </div>
+          <button type="button" class="collapsible">And also this</button>
+          <div class="content">
+            <p>Lorem ipsum...</p>
+          </div>
+        </div>
+        <div class="flex-video">
+          <video id="video" class="video" controls>
+            <source
+              src="coverr--10-20-pumpkim-carving-14-6727.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer class="footer">
+    <div class="info">
+      <p>Daniel Cunha 2020</p>
+    </div>
+  </footer>
+  <script type="module" src="slider.js"></script>
+  <script type="module" src="navbar.js"></script>
+</html>
